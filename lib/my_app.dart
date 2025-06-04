@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/features/auth/view/screen/register_screen.dart';
 import 'package:tasks/features/home/view/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget{
@@ -6,7 +7,7 @@ class MyApp extends StatelessWidget{
 
   Widget build(BuildContext context){
     return MaterialApp(
-      home: HomeScreen(),
+      home: RegisterScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
