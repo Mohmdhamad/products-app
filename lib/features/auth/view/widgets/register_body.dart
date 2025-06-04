@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/style/colors.dart';
-import 'package:tasks/features/auth/view/screen/login_screen.dart';
+import 'package:tasks/features/home/view/screen/home_screen.dart';
+import 'package:tasks/features/login/view/screen/login_screen.dart';
 import 'package:tasks/features/auth/view/widgets/button.dart';
 import 'package:tasks/features/auth/view/widgets/text_form.dart';
 import 'package:tasks/features/home/view/model/data/product_list.dart';
@@ -35,19 +36,22 @@ class RegisterBody extends StatelessWidget {
                 DefaultTextForm(labelText: 'National Id', prefixIcon: Icons.perm_identity, hintText: 'Enter your National Id',validate: MyValidators.nationalIdValidator,),
                 DefaultTextForm(labelText: 'Password', prefixIcon: Icons.lock, hintText: 'Enter your password',validate: MyValidators.passwordValidator,),
                 DefaultTextForm(labelText: 'Token', prefixIcon: Icons.edit, hintText: 'Your Token',validate:MyValidators.tokenValidator ,),
-                defaultButton(context),
+                defaultButton(context: context,screen: HomeScreen(),text: 'Sign Up'),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: Row(
                     children: [
                       Text('Have an account ! ',
-                      style: titleStyle(),),
+                      style: titleStyle(
+                        textSize: 18.0
+                      ),),
                       Spacer(),
                       TextButton(onPressed: (){
                         navigateTo(context, LoginScreen());
                       } ,child: Text(
                         'Login now',
                       style: titleStyle(color: AppColors.blue,
+                        textSize: 19.0
                       ),
                       ),),
                     ],
