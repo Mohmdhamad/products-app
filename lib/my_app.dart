@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget{
 
   Widget build(BuildContext context){
     return MaterialApp(
-      home: RegisterScreen(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

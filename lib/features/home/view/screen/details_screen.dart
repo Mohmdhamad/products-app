@@ -41,7 +41,6 @@ class DetailsScreen extends StatelessWidget {
                       size: 15.0,
                       color: AppColors.blue,
                     ),
-
                   ],
                 ),
               ],

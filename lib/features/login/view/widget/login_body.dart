@@ -28,7 +28,7 @@ class LoginBody extends StatelessWidget {
               DefaultTextForm(labelText: 'Password', prefixIcon: Icons.lock, hintText: 'enter your password',validate: MyValidators.passwordValidator,),
               defaultButton(context:context,screen: HomeScreen(),text: 'Login '),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10R.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Row(
                   children: [
                     Text('Don\'t Have an account !',
